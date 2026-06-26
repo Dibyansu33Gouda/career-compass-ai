@@ -244,3 +244,8 @@ Return JSON:
 @app.get("/")
 def root():
     return {"status": "CareerCompass AI backend running", "version": "2.0.0"}
+
+@app.get("/debug")
+def debug():
+    key = os.getenv("GEMINI_API_KEY", "NOT SET")
+    return {"key_set": bool(key), "key_preview": key[:10] + "..." if key else "empty"}
