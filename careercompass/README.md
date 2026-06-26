@@ -39,8 +39,8 @@ Deploy    →  Vercel (frontend) · Render (backend)
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/Dibyansu33Gouda/career-compass-ai-242.git
-cd career-compass-ai-242
+git clone https://github.com/Dibyansu33Gouda/career-compass-ai
+cd career-compass-ai
 ```
 
 ### 2. Backend setup
@@ -135,4 +135,4 @@ career-compass-ai-242/
 
 ---
 
-*Built with ❤️ for the Google Vibe Coding Hackathon*
+*Built with ❤️ for the Google(unstop.com)  Vibe Coding Hackathon*
