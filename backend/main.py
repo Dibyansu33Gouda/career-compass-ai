@@ -43,7 +43,7 @@ async def call_gemini(system: str, user: str) -> str:
         )
     if resp.status_code == 429:
         raise HTTPException(429, "Rate limit hit — please retry in a moment.")
-    if not resp.ok:
+    if not resp.is_success:
         raise HTTPException(resp.status_code, f"Gemini error: {resp.text[:200]}")
 
     data = resp.json()
@@ -249,6 +249,7 @@ def root():
 def debug():
     key = os.getenv("GEMINI_API_KEY", "NOT SET")
     return {"key_set": bool(key), "key_preview": key[:10] + "..." if key else "empty"}
+
 
 
 
