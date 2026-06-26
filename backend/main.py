@@ -16,7 +16,7 @@ app = FastAPI(title="CareerCompass AI", version="2.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],          # tighten to your Vercel URL in production
+    allow_origins=["https://career-compass-ai-belv-n2tm5jol3-dibyansu-coding.vercel.app", "https://career-compass-ai.vercel.app", "*"],          # tighten to your Vercel URL in production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -249,4 +249,5 @@ def root():
 def debug():
     key = os.getenv("GEMINI_API_KEY", "NOT SET")
     return {"key_set": bool(key), "key_preview": key[:10] + "..." if key else "empty"}
+
 
