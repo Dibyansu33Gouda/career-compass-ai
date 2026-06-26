@@ -127,10 +127,10 @@ career-compass-ai-242/
 
 ## 👤 Author
 
-**Dibyansu Gouda** · CSE @ NIST University, Baripada, Odisha (Batch 2025)
+**Dibyansu Gouda** · CSE @ NIST University, Berhampur , Odisha (Batch 2025)
 
 [![GitHub](https://img.shields.io/badge/GitHub-Dibyansu33Gouda-181717?logo=github)](https://github.com/Dibyansu33Gouda)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Dibyansu_Gouda-0A66C2?logo=linkedin)](https://linkedin.com/in/dibyansu-gouda-b5b432379)
+
 [![Portfolio](https://img.shields.io/badge/Portfolio-Live-0f766e?logo=github-pages)](https://dibyansu33gouda.github.io/pixel-parade-311/)
 
 ---
