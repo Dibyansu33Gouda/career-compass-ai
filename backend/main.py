@@ -32,7 +32,7 @@ async def call_gemini(system: str, user: str) -> str:
     async with httpx.AsyncClient(timeout=60) as client:
         resp = await client.post(
             GEMINI_URL,
-            headers={"x-goog-api-key": GEMINI_API_KEY},
+            headers={"Authorization": f"Bearer {GEMINI_API_KEY}", "x-goog-api-key": GEMINI_API_KEY},
             json={
                 "contents": [{"parts": [{"text": prompt}]}],
                 "generationConfig": {
@@ -249,6 +249,7 @@ def root():
 def debug():
     key = os.getenv("GEMINI_API_KEY", "NOT SET")
     return {"key_set": bool(key), "key_preview": key[:10] + "..." if key else "empty"}
+
 
 
 
