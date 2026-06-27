@@ -9,7 +9,7 @@ load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 GEMINI_URL = (
     "https://generativelanguage.googleapis.com/v1beta/models/"
-    "gemini-2.0-flash:generateContent"
+    "gemini-1.5-flash:generateContent"
 )
 
 app = FastAPI(title="CareerCompass AI", version="2.0.0")
@@ -249,6 +249,7 @@ def root():
 def debug():
     key = os.getenv("GEMINI_API_KEY", "NOT SET")
     return {"key_set": bool(key), "key_preview": key[:10] + "..." if key else "empty"}
+
 
 
 
