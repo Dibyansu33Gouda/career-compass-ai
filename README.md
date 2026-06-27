@@ -2,7 +2,7 @@
 
 > **From skills to a personalized career action plan in under 60 seconds.**
 
-Built for the **Google Vibe Coding Hackathon** by [Dibyansu Gouda](https://github.com/Dibyansu33Gouda) · NIST University, Baripada, Odisha.
+Built for the **Google Vibe Coding Hackathon** by [Dibyansu Gouda](https://github.com/Dibyansu33Gouda) · NIST University, Berhampur , Odisha.
 
 🔴 **[Live Demo](https://career-compass-ai-belv-n2tm5jol3-dibyansu-coding.vercel.app)** · **[Backend API](https://career-compass-ai-z21y.onrender.com)** · **[Portfolio](https://dibyansu33gouda.github.io/pixel-parade-311/)**
 
@@ -141,7 +141,7 @@ career-compass-ai/
 
 ## 👤 Author
 
-**Dibyansu Gouda** · CSE @ NIST University, Baripada, Odisha (Batch 2025)
+**Dibyansu Gouda** · CSE @ NIST University, Berhampur, Odisha (Batch 2025)
 
 [![GitHub](https://img.shields.io/badge/GitHub-Dibyansu33Gouda-181717?logo=github)](https://github.com/Dibyansu33Gouda)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Dibyansu_Gouda-0A66C2?logo=linkedin)](https://linkedin.com/in/dibyansu-gouda-b5b432379)
