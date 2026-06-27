@@ -1,4 +1,4 @@
-import os, json, re, httpx
+ï»¿import os, json, re, httpx
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
@@ -38,7 +38,7 @@ async def call_ai(system: str, user: str) -> str:
             },
         )
     if resp.status_code == 429:
-        raise HTTPException(429, "Rate limit hit — please retry in a moment.")
+        raise HTTPException(429, "Rate limit hit - please retry in a moment.")
     if not resp.is_success:
         raise HTTPException(resp.status_code, f"AI error: {resp.text[:200]}")
     data = resp.json()
@@ -63,7 +63,7 @@ class RoadmapRequest(BaseModel):
 
 @app.post("/api/roadmap")
 async def generate_roadmap(req: RoadmapRequest):
-    system = "You are CareerCompass AI — a pragmatic career mentor. Given a user resume and target role, produce a JSON career roadmap. Be specific and honest."
+    system = "You are CareerCompass AI â€” a pragmatic career mentor. Given a user resume and target role, produce a JSON career roadmap. Be specific and honest."
     user = f"""TARGET ROLE: {req.role}
 TIMELINE: {req.timeline} days
 RESUME: \"\"\"{req.resume}\"\"\"
@@ -150,3 +150,4 @@ def root():
 def debug():
     key = os.getenv("GROQ_API_KEY", "NOT SET")
     return {"key_set": bool(key), "key_preview": key[:10] + "..." if key else "empty"}
+
